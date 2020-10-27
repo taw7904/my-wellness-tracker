@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+html {
+    width: 300px;
+    height: 450px;
+}
+
+button {
+    height: 30px;
+    width: 30px;
+    outline: none;
+}
+
+body {
+    font-family: 'Sen', sans-serif;
+}
+
+header {
+    background-color: #EBEBEB;
+    height: 30px;
+    color: #9A9A9A;
+    line-height: 30px;
+    padding-left: 15px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+header img {
+    float: right;
+    height: 25px;
+    opacity: 0.3;
+    padding-top: 2px;
+    padding-right: 5px;
+}
+
+#mainSection {
+    padding-left: 10px;
+}
+
+.date {
+    color: #5B5B5B;
+    font-size: 12px;
+}
+
+.welcome {
+    color: #A0A0A0;
+    font-size: 16px;
+}
+
+.feeling {
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#intro p {
+    margin: 5px;
+}
+
+#intro {
+    margin-bottom: 30px;
+}
+
+/* slider styles from https://www.w3schools.com/howto/howto_js_rangeslider.asp*/
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  width: 96%;
+  height: 8px;
+  border-radius: 5px;  
+  background: #C4C4C4;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  cursor: pointer;
+}
+
+.slider1::-webkit-slider-thumb {
+  background: url('images/sad.png');
+}
+
+.slider1::-moz-range-thumb {
+  background: url('images/sad.png');
+}
+
+.slider2::-webkit-slider-thumb {
+  background: url('images/indifferent.png');
+}
+
+.slider2::-moz-range-thumb {
+  background: url('images/indifferent.png');
+}
+
+.slider3::-webkit-slider-thumb {
+  background: url('images/neutral.png');
+}
+
+.slider3::-moz-range-thumb {
+  background: url('images/neutral.png');
+}
+
+.slider4::-webkit-slider-thumb {
+  background: url('images/content.png');
+}
+
+.slider4::-moz-range-thumb {
+  background: url('images/content.png');
+}
+
+.slider5::-webkit-slider-thumb {
+  background: url('images/happy.png');
+}
+
+.slider5::-moz-range-thumb {
+  background: url('images/happy.png');
+}
+
+.noteText {
+    width: 91%;
+    border-radius: 8px;
+    height: 28px;
+    border: 2px solid #e7e7e7;
+    padding-left: 10px;
+    font-family: 'Sen', sans-serif;
+    margin-bottom: 40px;
+}
+
+.done {
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: #E1E1E1;
+    color: #5E5E5E;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.ending {
+    text-align: center;
+}
+
+.skip {
+    color: #9D9D9D;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#rangeText {
+   text-align: center;
+    width: 97%;
+    padding-bottom: 15px;
+    color: #5E5E5E;
+    font-weight: 700;
+    font-size: 13px;
+}
