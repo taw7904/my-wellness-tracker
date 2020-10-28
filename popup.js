@@ -35,42 +35,27 @@ test.addEventListener('click', function() {
 slider.oninput = function() {
     let mood;
     if(this.value==1) {
-        slider.classList.remove('slider2');
-        slider.classList.remove('slider3');
-        slider.classList.remove('slider4');
-        slider.classList.remove('slider5');
+        slider.classList.remove('slider2', 'slider3', 'slider4', 'slider5');
         slider.classList.add('slider1');
         mood = "Sad";
     }
     if(this.value==2) {
-        slider.classList.remove('slider1');
-        slider.classList.remove('slider3');
-        slider.classList.remove('slider4');
-        slider.classList.remove('slider5');
+        slider.classList.remove('slider1', 'slider3', 'slider4', 'slider5');
         slider.classList.add('slider2');
         mood = "Indifferent";
     }
     if(this.value==3) {
-        slider.classList.remove('slider1');
-        slider.classList.remove('slider2');
-        slider.classList.remove('slider4');
-        slider.classList.remove('slider5');
+        slider.classList.remove('slider1', 'slider2', 'slider4', 'slider5');
         slider.classList.add('slider3');
         mood = "Neutral";
     }
     if(this.value==4) {
-        slider.classList.remove('slider1');
-        slider.classList.remove('slider2');
-        slider.classList.remove('slider3');
-        slider.classList.remove('slider5');
+        slider.classList.remove('slider1', 'slider2', 'slider3', 'slider5');
         slider.classList.add('slider4');
         mood = "Content";
     }
     if(this.value==5) {
-        slider.classList.remove('slider1');
-        slider.classList.remove('slider2');
-        slider.classList.remove('slider3');
-        slider.classList.remove('slider4');
+        slider.classList.remove('slider1', 'slider2', 'slider3', 'slider4');
         slider.classList.add('slider5');
         mood = "Happy";
     }
