@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <header>MY WELLNESS TRACKER<a href="dashboard.html" target="_blank"><img src="images/fullscreen.png"></a></header>
+    <header>my wellness tracker<a href="dashboard.html" target="_blank"><img src="images/fullscreen.png" id="fullscreen"></a><img src="images/calendar.png" id="calendar"></header>
 
     <section id="mainSection">
         <div id="intro">
@@ -14,25 +14,26 @@
             <p class="welcome">Welcome, Jane</p>
             <p class="feeling">How are you feeling today?</p>
         </div>
-        <div class="slidecontainer">
-            <p id="rangeText">Neutral</p>
-            <input type="range" min="1" max="5" value="3" class="slider slider3" id="myRange">
+        <div class="questionContainer">
+            <button class="answerBtn"><img src="images/neutral.png"><p>neutral</p></button>
+            <button class="answerBtn"><img src="images/content.png"><p>content</p></button>
+            <button class="answerBtn"><img src="images/sad.png"><p>sad</p></button>
+            <button class="answerBtn"><img src="images/happy.png"><p>happy</p></button>
+        </div>
+        
+        <div class="questionContainer2">
+            <button class="answerBtn"><img src="images/neutralsleep.png"><p>neutral</p></button>
+            <button class="answerBtn"><img src="images/well.png"><p>well</p></button>
+            <button class="answerBtn"><img src="images/notwell.png"><p>not well</p></button>
+            <button class="answerBtn"><img src="images/verywell.png"><p>very well</p></button>
         </div>
 
         <input type="text" placeholder="Add a note..." class="noteText">
 
         <div class="ending">
-        <button class="done">I'm Done!</button>
+        <a href="#nextQuestion"><button class="next" id="q1">Next</button></a>
             <p class="skip">Skip</p>
         </div>
-        <!--
-        <h2>Sleep</h2>
-        <h2>Exercise</h2>
-        <h2><a id="test" href="https://people.rit.edu/taw7904/portfolio/">Rest</a></h2>
-        <h2>Emotions</h2>
-
-        <button id="changeColor"></button>
--->
     </section>
     <script src="popup.js"></script>
 </body>

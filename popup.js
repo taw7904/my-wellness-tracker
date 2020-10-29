@@ -3,6 +3,10 @@ let test = document.querySelector('#test');
 let welcome = document.querySelector('.welcome');
 let slider = document.querySelector('.slider');
 let date = document.querySelector('.date');
+let nextQuestion = document.querySelector('#q1');
+let q1 = document.querySelector('.questionContainer');
+let q2 = document.querySelector('.questionContainer2');
+let feeling = document.querySelector('.feeling');
 
 // grabs button from popup.html and requests color value from storage
 // then applies color as background of the button
@@ -14,7 +18,7 @@ let date = document.querySelector('.date');
 // get the users email and display it
 chrome.storage.sync.get('userEmail', function(data) {
     let email = data.userEmail.slice(0, -10);
-    welcome.innerHTML = "Welcome, " + email; 
+    welcome.innerHTML = "Hello, " + email; 
 });
 
 // adds onclick event to trigger a programatically injected content script
@@ -29,38 +33,17 @@ chrome.storage.sync.get('userEmail', function(data) {
 };
 test.addEventListener('click', function() {
     chrome.tabs.create({url: 'https://people.rit.edu/taw7904/portfolio/'});  
+    
+    http://code.iamkate.com/html-and-css/styling-buttons-with-css3/
 });
 */
 
-slider.oninput = function() {
-    let mood;
-    if(this.value==1) {
-        slider.classList.remove('slider2', 'slider3', 'slider4', 'slider5');
-        slider.classList.add('slider1');
-        mood = "Sad";
-    }
-    if(this.value==2) {
-        slider.classList.remove('slider1', 'slider3', 'slider4', 'slider5');
-        slider.classList.add('slider2');
-        mood = "Indifferent";
-    }
-    if(this.value==3) {
-        slider.classList.remove('slider1', 'slider2', 'slider4', 'slider5');
-        slider.classList.add('slider3');
-        mood = "Neutral";
-    }
-    if(this.value==4) {
-        slider.classList.remove('slider1', 'slider2', 'slider3', 'slider5');
-        slider.classList.add('slider4');
-        mood = "Content";
-    }
-    if(this.value==5) {
-        slider.classList.remove('slider1', 'slider2', 'slider3', 'slider4');
-        slider.classList.add('slider5');
-        mood = "Happy";
-    }
-    rangeText.innerHTML = mood;
-}
-
 let currDay = new Date().toLocaleDateString();
 date.innerHTML = currDay;
+
+nextQuestion.addEventListener('click', function() {
+    q1.style.display = "none";
+    q2.style.display = "block";
+    feeling.innerHTML = "How did you sleep?";
+    welcome.style.visibility = "hidden";
+});
