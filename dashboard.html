@@ -1,15 +1,29 @@
 <html>
 
+<head>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
 <body>
-    <h1>Dashboard</h1>
-    <canvas id="myChart"></canvas>
+    <ul>
+        <li id="title">my<br>wellness<br>tracker</li>
+        <li><a class="active">SUMMARY</a></li>
+        <li><a href="calendar.html">CALENDAR</a></li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="journal.html">JOURNAL</a></li>
+        <li><a href="resources.html">RESOURCES</a></li>
+    </ul>
+    
+    <section id="homePageSection">
+        <h3 class="date">10/31/2020</h3>
+    <h2 class="greeting">Hello, <span>Joel!</span></h2>
+    </section>
+    
 
-
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
+    <!--<canvas id="myChart"></canvas>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
 https://stackoverflow.com/questions/53029697/how-to-include-library-in-extension-in-chrome
--->
+
     <script>
         var ctx = document.getElementById('myChart').getContext('2d');
         var chart = new Chart(ctx, {
@@ -32,6 +46,7 @@ https://stackoverflow.com/questions/53029697/how-to-include-library-in-extension
         });
 
     </script>
+-->
 </body>
 
 </html>

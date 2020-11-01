@@ -11,29 +11,27 @@
     <section id="mainSection">
         <div id="intro">
             <p class="date">SAT 3/20</p>
-            <p class="welcome">Welcome, Jane</p>
-            <p class="feeling">How are you feeling today?</p>
+            <p class="welcome">Hello, Jane</p>
+            <p class="feeling">How happy are you?</p>
         </div>
         <div class="questionContainer">
-            <button class="answerBtn"><img src="images/neutral.png"><p>neutral</p></button>
-            <button class="answerBtn"><img src="images/content.png"><p>content</p></button>
-            <button class="answerBtn"><img src="images/sad.png"><p>sad</p></button>
-            <button class="answerBtn"><img src="images/happy.png"><p>happy</p></button>
+            <button class="answerBtn downBtn " class="minus"><img src="images/down.png"><p>-</p></button>
+            <div class="answerContainer"><p id="answerVal">5</p></div>
+            <button class="answerBtn upBtn plus"><img src="images/up.png"><p>+</p></button>
         </div>
-        
-        <div class="questionContainer2">
-            <button class="answerBtn"><img src="images/neutralsleep.png"><p>neutral</p></button>
-            <button class="answerBtn"><img src="images/well.png"><p>well</p></button>
-            <button class="answerBtn"><img src="images/notwell.png"><p>not well</p></button>
-            <button class="answerBtn"><img src="images/verywell.png"><p>very well</p></button>
-        </div>
-
-        <input type="text" placeholder="Add a note..." class="noteText">
 
         <div class="ending">
-        <a href="#nextQuestion"><button class="next" id="q1">Next</button></a>
-            <p class="skip">Skip</p>
+            <a href="#skipQuestion"><button class="skip" id="q1skip">Skip</button></a>
+        <a href="#nextQuestion"><button class="next" id="nextQuestion">Next</button></a>
+        
         </div>
+    </section>
+    
+    <section id="confirmation">
+    <img src="images/confirmation.png">
+        <p id="thatsit">That's it for now!</p>
+        <p id="comeback">You can always come back and make another entry.</p>
+        <div id="finishDiv"><button id="finish">Finish</button></div>
     </section>
     <script src="popup.js"></script>
 </body>
