@@ -4,7 +4,7 @@
     "version": "1.0",
     "permissions": ["activeTab", "tabs", "declarativeContent", "storage", "identity", "identity.email"],
     "background": {
-        "scripts": ["background.js"],
+        "scripts": ["scripts/background.js"],
         "persistent": false
     },
     "browser_action": {
