@@ -3,7 +3,8 @@ let date = document.querySelector('.date');
 
 chrome.storage.sync.get('userEmail', function(data) {
     let email = data.userEmail.slice(0, -10);
-    name.innerHTML = email + "!";
+    let formattedEmail = email.charAt(0).toUpperCase() + email.slice(1);
+    name.innerHTML = formattedEmail + "!";
 });
 
 let currDay = new Date().toLocaleDateString();

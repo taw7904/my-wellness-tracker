@@ -2,30 +2,32 @@
 
 html {
     width: 300px;
-    height: 550px;
+    height: 475px;
 }
 
 body {
     font-family: 'Sen', sans-serif;
-    background-color: #FAFAFA;
+    background-color: #ffffff;
+    margin: 0;
 }
 
 header {
     background-color: #00B7A3;
-    height: 30px;
+    height: 40px;
     color: #ffffff;
-    line-height: 30px;
+    line-height: 40px;
     padding-left: 15px;
     font-weight: 700;
-    margin-bottom: 30px;
+    font-size: 14px;
+    margin-bottom: 45px;
 }
 
 #mainSection {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 #confirmation {
-    margin-left: 10px;
+    margin-left: 20px;
     display: none;
 }
 
@@ -36,14 +38,14 @@ header {
 #fullscreen {
     float: right;
     height: 25px;
-    padding-top: 2px;
+    padding-top: 7px;
     padding-right: 5px;
 }
 
 #calendar {
     float: right;
     height: 15px;
-    padding-top: 7px;
+    padding-top: 12px;
     padding-right: 5px;
 }
 
@@ -52,7 +54,7 @@ header {
 }
 
 #intro {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .date {
@@ -63,7 +65,7 @@ header {
 
 .welcome {
     color: #00B7A3;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 700;
     padding-bottom: 4px;
 }
@@ -71,8 +73,9 @@ header {
 .feeling {
     color: #000000;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     height: 50px;
+    width: 275px;
 }
 
 .next, .skip {
@@ -85,8 +88,8 @@ header {
     outline: none;
     font-size: 14px;
     cursor: pointer;
-    margin-left: 9px;
-    margin-right: 9px;
+    margin-left: 11px;
+    margin-right: 11px;
 }
 
 .next, #finish {
@@ -100,7 +103,6 @@ header {
     background-color: #FAFAFA;
     border: 2px solid #00B7A3;
 }
-
 #finishDiv {
     text-align: center;
 }
@@ -123,23 +125,54 @@ header {
     text-align: center;
 }
 
+#noteP {
+    padding-left: 13px;
+}
+
+#noteP span {
+    height: 17px;
+    line-height: 17px;
+    color: #5E5E5E;
+    padding-left: 8px;
+}
+
+#noteImg {
+    width: 17px;
+    height: 17px;
+    float: left;
+}
+
+#note {
+    margin-bottom: 15px;
+    width: 230px;
+    margin-left: -15px;
+    height: 30px;
+    font-family: 'Sen', sans-serif;
+    padding-left: 10px;
+    background-color: #EBEBEB;
+    outline: none;
+    border: none;
+    font-size: 12px;
+}
+
 .answerBtn {
     font-family: 'Sen', sans-serif;
     cursor: pointer;
     width: 80px;
     height: 60px;
     border: none;
-    background-color: #FAFAFA;
+    background-color: #ffffff;
 }
 
 .answerBtn img {
     text-align: center;
+    padding-top: 15px;
 }
 
 .answerBtn p {
     text-align: center;
     font-size: 36px;
-    margin-top: 0px;
+    margin-top: 5px;
     color: #000000;
 }
 
@@ -147,10 +180,28 @@ header {
     float: left;
 }
 
+.downBtn p {
+    float: left;
+    margin-left: 15px;
+}
+
+.downBtn img {
+    float: right;
+}
+
+.upBtn img {
+    float: left;
+}
+
+.upBtn p {
+    float: right;
+    margin-right: 15px;
+}
+
 .answerContainer {
     width: 30%;
     position: absolute;
-    top: 130px;
+    top: 145px;
     margin-right: 120px;
     margin-left: 120px;
 }
@@ -172,7 +223,7 @@ header {
 }
 
 .questionContainer {
-    margin-bottom: 200px;
+    margin-bottom: 125px;
 }
 
 #thatsit {
@@ -185,5 +236,5 @@ header {
 #comeback {
     color: #00B7A3;
     font-size: 14px;
-    margin-bottom: 80px;
+    margin-bottom: 76px;
 }

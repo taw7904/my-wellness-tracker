@@ -7,6 +7,7 @@ let nextQuestion = document.querySelector('#nextQuestion');
 let qc = document.querySelector('.questionContainer');
 let answerContainer = document.querySelector('.answerContainer');
 let feeling = document.querySelector('.feeling');
+let skip = document.querySelector('.skip');
 
 let currQuestion = 1;
 
@@ -20,13 +21,16 @@ let currQuestion = 1;
 // get the users email and display it
 chrome.storage.sync.get('userEmail', function(data) {
     let email = data.userEmail.slice(0, -10);
-    welcome.innerHTML = "Hello, " + email;
+    let formattedEmail = email.charAt(0).toUpperCase() + email.slice(1);
+    welcome.innerHTML = "Hello, " + formattedEmail + "!";
 });
 
 let currDay = new Date().toLocaleDateString();
 date.innerHTML = currDay;
 
-nextQuestion.addEventListener('click', function() {
+const moveQuestions = (e) => {
+    answerContainer.style.marginLeft = "120px";
+    note.value = "";
     currQuestion++;
     if(currQuestion==2) {
         feeling.innerHTML = "How is your physical health?"; 
@@ -46,7 +50,7 @@ nextQuestion.addEventListener('click', function() {
     }
     answerVal.innerHTML = "5";
     welcome.style.visibility = "hidden";
-});
+};
 
 const changeVal = (e) => {
     let path;
@@ -70,6 +74,8 @@ const changeVal = (e) => {
     }
     }
     answerVal.innerHTML = newVal;
-}
+};
 
+nextQuestion.addEventListener('click', moveQuestions);
+skip.addEventListener('click', moveQuestions);
 qc.addEventListener('click', changeVal);

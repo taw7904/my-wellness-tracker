@@ -3,6 +3,7 @@
 body {
     font-family: 'Sen', sans-serif;
     margin: 0;
+    background-color: #F3F3F3;
 }
 
 ul {
@@ -11,7 +12,7 @@ ul {
   padding: 0;
   width: 200px;
   background-color: #00A88E;
-    height: 100%;
+    height: 135%;
     color: white;
   font-size: 20px;
     float: left;
@@ -20,6 +21,10 @@ ul {
 li {
     padding: 0;
     width: 200px;
+}
+
+li img {
+    width: 30px;
 }
 
 #title {
@@ -41,20 +46,22 @@ li a {
 }
 
 li a.active {
-  background-color: #008672;
+  background-color: #007362;
   color: white;
+    font-weight: 700;
 }
 
 li a:hover {
-  background-color: #008672;
+  background-color: #00927B;
   color: white;
 }
 
 #homePageSection {
-    padding-left: 350px;
-    padding-top: 75px;
+    padding-top: 65px;
     font-size: 36px;
     color: #5B5B5B;
+    margin-left: 25%;
+    width: 55%;
 }
 
 .date {
@@ -64,14 +71,165 @@ li a:hover {
 
 .greeting {
     margin-top: 15px;
-}
-
-.greeting span {
     color: #00A88E;
 }
 
 #chartContainer {
-    height: 40vh;
-    width: 40vw;
+    height: 50vh;
+    width: 50vw;
 }
 
+.hiddenDate {
+    visibility: hidden;
+}
+
+.pageSection {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+#mainQuote {
+    height: 200px;
+}
+
+#quote {
+    margin-top: 25px;
+    width: 80%;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #111111;
+}
+
+#author {
+    float: right;
+    font-size: 18px;
+    padding-right: 12%;
+    color: #333333;
+    font-weight: 700;
+}
+
+.qSummary {
+    font-size: 24px;
+    color: #333333;
+    font-weight: 700;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.numSummary {
+    font-size: 24px;
+    color: #00A88E;
+    font-weight: 700;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.noteSummary {
+    font-size: 20px;
+    color: #333333;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nameOfSection {
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+.resourceDiv {
+    height: 175px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.journalDiv {
+    height: 110px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.resource {
+    width: 29%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.journal {
+    width: 85%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.journalEntry {
+    font-size: 16px;
+    height: 40px;
+    color: #000000;
+    padding-right: 5px;
+}
+
+.resource2-3 {
+    width: 55%;
+}
+
+.resource1-3 {
+    width: 35%;
+}
+
+.resource1-2 {
+    width: 45%;
+}
+
+.description {
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    padding-bottom: 40px;
+    height: 50px;
+}
+
+.resource2-3 .description {
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.resource1-3 .description {
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+
+.resource1-2 .description {
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+.link {
+    font-size: 14px;
+    color: #00A88E;
+}
+
+.link img {
+    width: 25px;
+    float: right;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 1800px) {
+  ul {
+    height: 100%;
+  }
+}

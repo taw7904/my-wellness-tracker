@@ -6,17 +6,33 @@
 
 <body>
     <ul>
-        <li id="title">my<br>wellness<br>tracker</li>
-        <li><a class="active">SUMMARY</a></li>
-        <li><a href="calendar.html">CALENDAR</a></li>
-        <li><a href="history.html">HISTORY</a></li>
-        <li><a href="journal.html">JOURNAL</a></li>
-        <li><a href="resources.html">RESOURCES</a></li>
+        <li id="title"><img src="images/logo.png"><br>my<br>wellness<br>tracker</li>
+        <li><a class="active">summary</a></li>
+        <li><a href="calendar.html">calendar</a></li>
+        <li><a href="history.html">history</a></li>
+        <li><a href="journal.html">journal</a></li>
+        <li><a href="resources.html">resources</a></li>
     </ul>
     
     <section id="homePageSection">
         <h3 class="date">10/31/2020</h3>
-    <h2 class="greeting">Hello, <span id="name">Joel!</span></h2>
+        <h2 class="greeting">Hello, <span id="name">Joel!</span></h2>
+        
+        <h4 class="nameOfSection">Quote of the Day</h4>
+        <div id="mainQuote" class="pageSection"> 
+        <p id="quote"><img src="images/quote.png"> You don't have to struggle in silence. You can be un-silent. You can live well with a mental health condition, as long as you open up to somebody about it."</p>
+        <p id="author">-Demi Lovato</p>
+        </div>
+        
+        <h4 class="nameOfSection">Your Latest Results</h4>
+        <div id="results" class="pageSection"> 
+        <p class="qSummary">How happy are you?</p>
+        <p class="numSummary">8/10</p>
+        <p class="noteSummary">"I feel great!"</p>
+        <p class="qSummary">How connected to others do you feel?</p>
+        <p class="numSummary">9/10</p>
+        <p class="noteSummary">"My support system is awesome!"</p>
+        </div>
     </section>
     <script src="scripts/dashboard.js"></script>
 </body>
