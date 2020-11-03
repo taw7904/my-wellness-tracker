@@ -7,53 +7,65 @@ body {
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #00A88E;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 215px;
+    background-color: #00A88E;
     height: 135%;
     color: white;
-  font-size: 20px;
+    font-size: 20px;
     float: left;
 }
 
 li {
     padding: 0;
-    width: 200px;
+    width: 215px;
 }
 
 li img {
-    width: 30px;
+    width: 45px;
+    float: left;
+    padding-top: 5px;
 }
 
 #title {
-    padding-left: 25px;
-    padding-top: 25px;
+    padding-left: 30px;
+    padding-top: 115px;
     padding-bottom: 50px;
 }
 
+#title span {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+#firstTitle:after {
+    content: '\A';
+    white-space: pre;
+}
+
 li a {
-  display: block;
-  text-decoration: none;
-  color: white;
-    padding-left: 25px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-left: 35px;
     margin-bottom: 25px;
     margin-top: 15px;
     height: 35px;
     line-height: 35px;
-    
+
 }
 
 li a.active {
-  background-color: #007362;
-  color: white;
+    background-color: #007362;
+    color: white;
     font-weight: 700;
 }
 
 li a:hover {
-  background-color: #00927B;
-  color: white;
+    background-color: #00927B;
+    color: white;
 }
 
 #homePageSection {
@@ -229,7 +241,7 @@ li a:hover {
 }
 
 @media screen and (min-width: 1800px) {
-  ul {
-    height: 100%;
-  }
+    ul {
+        height: 100%;
+    }
 }

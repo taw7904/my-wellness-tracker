@@ -6,7 +6,7 @@
 
 <body>
     <ul>
-        <li id="title"><img src="images/logo.png"><br>my<br>wellness<br>tracker</li>
+        <li id="title"><img src="images/logo.png"><span id="firstTitle">my wellness</span><span>tracker</span></li>
         <li><a class="active">summary</a></li>
         <li><a href="calendar.html">calendar</a></li>
         <li><a href="history.html">history</a></li>
@@ -26,12 +26,12 @@
         
         <h4 class="nameOfSection">Your Latest Results</h4>
         <div id="results" class="pageSection"> 
-        <p class="qSummary">How happy are you?</p>
-        <p class="numSummary">8/10</p>
-        <p class="noteSummary">"I feel great!"</p>
-        <p class="qSummary">How connected to others do you feel?</p>
-        <p class="numSummary">9/10</p>
-        <p class="noteSummary">"My support system is awesome!"</p>
+        <p class="qSummary" id="quest1">How happy are you?</p>
+        <p class="numSummary" id="firstQ">8/10</p>
+        <p class="noteSummary" id="note1">"I feel great!"</p>
+        <p class="qSummary" id="quest2">How connected to others do you feel?</p>
+        <p class="numSummary" id="secondQ">9/10</p>
+        <p class="noteSummary" id="note2">"My support system is awesome!"</p>
         </div>
     </section>
     <script src="scripts/dashboard.js"></script>

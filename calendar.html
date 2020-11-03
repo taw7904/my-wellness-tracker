@@ -2,22 +2,251 @@
 
 <head>
     <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/calendar.css">
 </head>
 
 <body>
     <ul>
-        <li id="title"><img src="images/logo.png"><br>my<br>wellness<br>tracker</li>
+        <li id="title"><img src="images/logo.png"><span id="firstTitle">my wellness</span><span>tracker</span></li>
         <li><a href="dashboard.html">summary</a></li>
         <li><a class="active">calendar</a></li>
         <li><a href="history.html">history</a></li>
         <li><a href="journal.html">journal</a></li>
         <li><a href="resources.html">resources</a></li>
     </ul>
-    
+
     <section id="homePageSection">
+        <div class="opaque1">
         <h3 class="date hiddenDate">Calendar</h3>
         <h2 class="greeting">Calendar</h2>
+            </div>
+
+        <div id="resultsDiv">
+            <div id="aDiv">
+                <p id="close">X</p>
+            <p class="resultsQ first">How happy are you?</p>
+            <p class="resultsA">7/10</p>
+            <p class="resultsQ">How is your physical health?</p>
+            <p class="resultsA">9/10</p>
+            <p class="resultsQ">How in control of your emotions are you?</p>
+            <p class="resultsA">5/10</p>
+            <p class="resultsQ">How accomplished do you feel?</p>
+            <p class="resultsA">5/10</p>
+            <p class="resultsQ">How connected to others do you feel?</p>
+            <p class="resultsA">8/10</p>
+                </div>
+        </div>
+
+        <div class="opaque">
+        <div id="monthDiv">
+            <div class="monthContainer">
+                <h4 class="monthTitle">January</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+
+            <div class="monthContainer">
+                <h4 class="monthTitle">February</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+
+            <div class="monthContainer">
+                <h4 class="monthTitle">March</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+
+            <div class="monthContainer">
+                <h4 class="monthTitle">April</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+
+            <div class="monthContainer">
+                <h4 class="monthTitle">May</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+
+            <div class="monthContainer">
+                <h4 class="monthTitle">June</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+
+            <div class="monthContainer">
+                <h4 class="monthTitle">July</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+
+            <div class="monthContainer">
+                <h4 class="monthTitle">August</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+
+            <div class="monthContainer">
+                <h4 class="monthTitle">September</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+
+            <div class="monthContainer">
+                <h4 class="monthTitle">October</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+
+            <div class="monthContainer">
+                <h4 class="monthTitle">November</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+
+            <div class="monthContainer">
+                <h4 class="monthTitle">December</h4>
+                <div class="month">
+                    <p class="col week"><span>Su</span><span>M</span><span>Tu</span><span>W</span><span>Th</span><span>F</span><span>Sa</span></p>
+
+                    <p class="col col-nums"><span>1</span><span>2</span><span>3</span><span>4</span><span class="checkin">5</span><span>6</span><span>7</span></p>
+
+                    <p class="col col-nums"><span>8</span><span id="nine">9</span><span class="double-nums checkin">10</span><span class="double-nums checkin">11</span><span class="double-nums">12</span><span class="double-nums checkin">13</span><span class="double-nums">14</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">15</span><span class="double-nums checkin">16</span><span class="double-nums">17</span><span class="double-nums">18</span><span class="double-nums">19</span><span class="double-nums">20</span><span class="double-nums">21</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums">22</span><span class="double-nums">23</span><span class="double-nums">24</span><span class="double-nums">25</span><span class="double-nums">26</span><span class="double-nums">27</span><span class="double-nums">28</span></p>
+
+                    <p class="col col-nums dn"><span class="double-nums checkin">29</span><span class="double-nums">30</span><span class="double-nums">31</span></p>
+                </div>
+            </div>
+        </div>
+        </div>
+
     </section>
+    <script src="scripts/calendar.js"></script>
 </body>
 
 </html>

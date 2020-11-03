@@ -1,5 +1,7 @@
 /* using chart.js library */
 var ctx = document.getElementById('myChart').getContext('2d');
+Chart.defaults.global.defaultFontFamily = "Sen";
+
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {

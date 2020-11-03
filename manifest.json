@@ -1,6 +1,6 @@
 {
     "name": "Wellness Tracker",
-    "description": "Base Level Extension",
+    "description": "Recieve daily check-in questions covering mental & physical wellness located right on your browser.",
     "version": "1.0",
     "permissions": ["activeTab", "tabs", "declarativeContent", "storage", "identity", "identity.email"],
     "background": {
