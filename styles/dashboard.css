@@ -154,6 +154,24 @@ li a:hover {
     font-size: 22px;
 }
 
+#recentEntries {
+    width: 87%;
+}
+
+#recentEntries img {
+    float: right;    
+    width: 30px;
+    cursor: pointer;
+}
+
+#rightarr {
+    margin-right: 20px;
+}
+
+#leftarr {
+    margin-right: 20px;
+}
+
 .resourceDiv {
     height: 175px;
     width: 100%;
