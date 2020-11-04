@@ -33,7 +33,10 @@ const writeToPage = (ques1, ques2, ans1, ans2) => {
 chrome.storage.sync.get('userEmail', function (data) {
     let email = data.userEmail.split('@')[0];
     let formattedEmail = email.charAt(0).toUpperCase() + email.slice(1);
-    name.innerHTML = formattedEmail + "!";
+    name.innerHTML = ", " + formattedEmail + "!";
+    if(data.userEmail==undefined) {
+        name.innerHTML = "there!";
+    }
 });
 
 // grab answer 1 data

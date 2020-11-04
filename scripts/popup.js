@@ -15,6 +15,9 @@ chrome.storage.sync.get('userEmail', function (data) {
     let email = data.userEmail.split('@')[0];
     let formattedEmail = email.charAt(0).toUpperCase() + email.slice(1);
     welcome.innerHTML = "Hello, " + formattedEmail + "!";
+    if(data.userEmail==undefined) {
+        welcome.innerHTML = "Hello there!";
+    }
 });
 
 let currDay = new Date();
