@@ -7,6 +7,7 @@ let qc = document.querySelector('.questionContainer');
 let answerContainer = document.querySelector('.answerContainer');
 let feeling = document.querySelector('.feeling');
 let skip = document.querySelector('.skip');
+let closeBtn = document.querySelector('#close');
 
 let currQuestion = 1;
 
@@ -57,6 +58,7 @@ const saveAnswer = (ans, noteVal) => {
 };
 
 const moveQuestions = (e) => {
+    note.style.visibility = "hidden";
     let ansVal = parseInt(answerVal.innerHTML, 10);
     saveAnswer(ansVal, note.value);
     answerContainer.style.marginLeft = "120px";
@@ -104,6 +106,17 @@ const changeVal = (e) => {
     answerVal.innerHTML = newVal;
 };
 
+const showNote = (e) => {
+  note.style.visibility = "visible";  
+};
+
+const collapse = (e) => {
+    window.close();
+};
+
 nextQuestion.addEventListener('click', moveQuestions);
 skip.addEventListener('click', moveQuestions);
 qc.addEventListener('click', changeVal);
+noteP.addEventListener('click', showNote);
+closeBtn.addEventListener('click', collapse);
+finish.addEventListener('click', collapse);
